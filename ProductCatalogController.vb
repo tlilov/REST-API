@@ -9,9 +9,9 @@ Namespace Controllers.API
         Inherits ApiController
         Implements IProductCatalogService
 
-        Private _service As IProductCatalogService
-
-        Public Sub New(ByVal service As IProductCatalogService)
+        Private _service As IEnhancedProductCatalogService
+ 
+        Public Sub New(ByVal service As IEnhancedProductCatalogService)
             _service = service
         End Sub
 
