@@ -16,7 +16,7 @@ Step 2. Implement the intereface from step 1, in HawkService.vb
 
 Step 3. In the implementation class create the proper query, based on the API Access Urls: https://api.hawksearch.info/api/
 
-Step 4. Load and map the results from the query into the proper corrensponding client objects.
+Step 4. Load and map the results from the query into the proper corresponding client objects.
 
 Step 5. Provide logging and error handling around each API method call.
 
