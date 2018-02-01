@@ -17,8 +17,10 @@ Namespace Controllers.API
 
       
         <HttpPost()>
-        Public Function GetNamedProductList(ByVal request As GetNamedProductListRequest) As GetNamedProductListResponse Implements IProductCatalogService.GetNamedProductList
-            Return _service.GetNamedProductList(request)
+        Public Function GetNamedProductList(request As Interfaces.GetNamedProductListRequest) As GetNamedProductListResponse Implements IProductCatalogService.GetNamedProductList
+                    Dim response As New GetNamedProductListResponse 
+                    response = _service.ExecuteNamedProductListQuery(request, response)
+                    Return response
         End Function
 
        
